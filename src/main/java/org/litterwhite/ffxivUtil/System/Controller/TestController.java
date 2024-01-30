@@ -1,6 +1,5 @@
-package org.litterwhite.ffxivUtil.Controller;
+package org.litterwhite.ffxivUtil.System.Controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 public class PasswordUtil {
 
     // 盐
-    public static final String SECRET="123456";
+    public static final String SECRET="litterwhite&AkieGZH";
 
 
     /**
