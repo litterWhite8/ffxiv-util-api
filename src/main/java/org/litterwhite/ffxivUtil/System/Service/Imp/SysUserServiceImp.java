@@ -3,7 +3,7 @@ package org.litterwhite.ffxivUtil.System.Service.Imp;
 import org.litterwhite.ffxivUtil.System.Mapper.SysUserMapper;
 import org.litterwhite.ffxivUtil.System.Pojo.SysUser;
 import org.litterwhite.ffxivUtil.System.Service.SysUserService;
-import org.litterwhite.ffxivUtil.Utils.PasswordUtil;
+import org.litterwhite.ffxivUtil.Common.Utils.PasswordUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

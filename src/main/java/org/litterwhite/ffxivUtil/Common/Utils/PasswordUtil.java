@@ -1,4 +1,6 @@
-package org.litterwhite.ffxivUtil.Utils;
+package org.litterwhite.ffxivUtil.Common.Utils;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import org.springframework.util.DigestUtils;
 
 import java.nio.charset.StandardCharsets;
@@ -20,9 +22,13 @@ public class PasswordUtil {
         return DigestUtils.md5DigestAsHex((password+SECRET).getBytes(StandardCharsets.UTF_8));
     }
 
+    public static String getMd5Encryption(String password,String salt){
+        return DigestUtils.md5DigestAsHex((password+salt).getBytes(StandardCharsets.UTF_8));
+    }
 
-//    public static void main(String[] args) {
-//        System.out.println(getMd5Encryption("123456"));
-//    }
+
+    public static void main(String[] args) {
+        System.out.println(Keys.secretKeyFor(SignatureAlgorithm.HS512));
+    }
 }
 	

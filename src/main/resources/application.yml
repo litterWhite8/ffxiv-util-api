@@ -34,6 +34,9 @@ spring:
       useGlobalDataSourceStat: true
       # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  redis:
+    host: 127.0.0.1
+    port: 6379
 
 mybatis:
   # 配置XML映射文件中指定的实体类别名路径
@@ -42,4 +45,8 @@ mybatis:
   mapper-locations: classpath:mapper/*/*.xml
   # 开启驼峰uName自动映射到u_name
   map-underscore-to-camel-case: true
+
+jwt:
+  secret: jianlajidexiaobaiweishenmehuizheyangnewozhenshicaolanimasileaaaajianlajidexiaobaiweishenmehuizheyangnewozhenshicaolanimasileaaaa
+  expiration: 86400000
 

@@ -1,4 +1,4 @@
-package org.litterwhite.ffxivUtil.Utils;
+package org.litterwhite.ffxivUtil.Common.Utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
